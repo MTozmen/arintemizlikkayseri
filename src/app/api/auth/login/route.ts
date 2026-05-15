@@ -42,6 +42,10 @@ export async function POST(request: Request) {
 
     return NextResponse.json({ success: true, message: 'Giriş başarılı' })
   } catch (error: any) {
-    return NextResponse.json({ success: false, message: 'Sunucu hatası' }, { status: 500 })
+    console.error('Login Error:', error)
+    return NextResponse.json({ 
+      success: false, 
+      message: `Sunucu hatası: ${error.message || 'Bilinmeyen hata'}` 
+    }, { status: 500 })
   }
 }

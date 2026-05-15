@@ -522,9 +522,11 @@ ul {
   z-index: 49;
   opacity: 0;
   transition: opacity 0.3s;
+  pointer-events: none;
 }
 .mobile-nav-overlay.active {
   opacity: 1;
+  pointer-events: auto;
 }
 
 .mobile-nav {

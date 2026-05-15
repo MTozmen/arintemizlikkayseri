@@ -33,7 +33,9 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
     <>
       <div className="topbar">
         <div className="topbar-left">
-          <span>📞 0533 295 20 38</span>
+          <a href="tel:05332952038" style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+            📞 0533 295 20 38
+          </a>
           <span>✉️ info@arintemizlikkayseri.com</span>
         </div>
         <div className="topbar-right">
@@ -96,6 +98,9 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
         <a href="#kurumsal" onClick={closeMenu}>KURUMSAL</a>
         <a href="#blog" onClick={closeMenu}>BLOG</a>
         <a href="#iletisim" onClick={closeMenu}>İLETİŞİM</a>
+        <a href="tel:05332952038" className="btn-primary" style={{ marginTop: '16px', backgroundColor: '#25D366', borderColor: '#25D366' }}>
+          📞 BİZİ ARAYIN
+        </a>
 
       </nav>
 
@@ -107,7 +112,9 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
             <h3 style={{ marginBottom: '16px', fontSize: '20px', fontWeight: '700' }}>Ücretsiz Teklif Alın</h3>
             <p style={{ color: 'var(--text-muted)', marginBottom: '24px', fontSize: '14px' }}>İhtiyacınıza özel temizlik hizmeti için bize ulaşın.</p>
             <ul style={{ display: 'flex', flexDirection: 'column', gap: '12px', fontSize: '14px' }}>
-              <li>📞 0533 295 20 38</li>
+              <li>
+                <a href="tel:05332952038">📞 0533 295 20 38</a>
+              </li>
               <li>✉️ info@arintemizlikkayseri.com</li>
               <li>📍 MEVLANA MAH. YAVUZ SULTAN SELİM CAD. GÜLNERSE APT NO:3/C TALAS KAYSERİ </li>
             </ul>
