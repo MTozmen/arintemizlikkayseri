@@ -29,6 +29,9 @@ export default async function Home() {
               <a href={`tel:${content.phone?.replace(/\s/g, '')}`} className="btn-primary" style={{ backgroundColor: '#25D366', borderColor: '#25D366', color: 'white' }}>
                 📞 BİZİ ARAYIN
               </a>
+              <a href={`tel:${content.phone?.replace(/\s/g, '')}`} className="btn-outline" style={{ backgroundColor: 'white' }}>
+                {content.phone || '0533 295 20 38'}
+              </a>
             </div>
           </div>
           
