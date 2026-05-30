@@ -12,11 +12,10 @@ export const metadata: Metadata = {
   description: "Ev, ofis, inşaat sonrası ve daha fazlası için profesyonel temizlik hizmetleri sunuyoruz.",
   icons: {
     icon: [
-      { url: "/favicon.ico", sizes: "any" },
-      { url: "/favicon.ico", type: "image/x-icon" }
+      { url: "/favicon.png", type: "image/png" }
     ],
-    shortcut: "/favicon.ico",
-    apple: "/favicon.ico"
+    shortcut: "/favicon.png",
+    apple: "/favicon.png"
   }
 };
 
