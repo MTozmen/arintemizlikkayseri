@@ -331,7 +331,7 @@ ul {
 }
 .footer-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   gap: 40px;
 }
 
@@ -634,11 +634,10 @@ ul {
   }
 
   .footer-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.5fr;
     gap: 32px;
   }
   .footer-grid > div:last-child {
-    grid-column: span 2;
     min-height: 200px;
   }
 }

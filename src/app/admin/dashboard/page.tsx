@@ -40,6 +40,8 @@ export default function Dashboard() {
           <p style={{ color: '#666', marginBottom: '16px' }}>Fotoğraf yükleyerek yeni blog yazıları paylaşın.</p>
           <Link href="/admin/blogs" style={{ display: 'inline-block', padding: '8px 16px', background: '#005436', color: 'white', borderRadius: '4px', textDecoration: 'none' }}>Blog Yönetimi</Link>
         </div>
+
+
       </div>
     </div>
   )

@@ -8,6 +8,7 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
   const isAdmin = pathname?.startsWith('/admin')
   const [menuOpen, setMenuOpen] = useState(false)
 
+
   // Close menu on route change
   useEffect(() => {
     setMenuOpen(false)
@@ -114,7 +115,7 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
       <footer className="footer" id="iletisim">
         <div className="container footer-grid">
           <div>
-            <h3 style={{ marginBottom: '16px', fontSize: '20px', fontWeight: '700' }}>Ücretsiz Teklif Alın</h3>
+            <h3 style={{ marginBottom: '16px', fontSize: '20px', fontWeight: '700' }}>Bize Ulaşın</h3>
             <p style={{ color: 'var(--text-muted)', marginBottom: '24px', fontSize: '14px' }}>İhtiyacınıza özel temizlik hizmeti için bize ulaşın.</p>
             <ul style={{ display: 'flex', flexDirection: 'column', gap: '12px', fontSize: '14px' }}>
               <li>
@@ -124,14 +125,7 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
               <li>📍 MEVLANA MAH. YAVUZ SULTAN SELİM CAD. GÜLNERSE APT NO:3/C TALAS KAYSERİ </li>
             </ul>
           </div>
-          <div>
-            <form style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-              <input type="text" placeholder="Ad Soyad" style={{ padding: '12px', borderRadius: '4px', border: '1px solid var(--border)' }} />
-              <input type="text" placeholder="Telefon" style={{ padding: '12px', borderRadius: '4px', border: '1px solid var(--border)' }} />
-              <textarea placeholder="Mesajınız" rows={3} style={{ padding: '12px', borderRadius: '4px', border: '1px solid var(--border)' }}></textarea>
-              <button className="btn-primary">GÖNDER →</button>
-            </form>
-          </div>
+
           <div style={{ background: '#e5e7eb', borderRadius: '8px', overflow: 'hidden', height: '300px' }}>
             <iframe 
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1556.8673952812676!2d35.55361595918891!3d38.70093584863341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x152b12baa68f6bfb%3A0x2da9a1beb3486d41!2sYavuz%20Sultan%20Selim%20Cd.%2C%20Talas%2FKayseri!5e0!3m2!1str!2str!4v1778866345044!5m2!1str!2str" 
